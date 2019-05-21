@@ -1,26 +1,26 @@
 <h1 style="text-align:center">
-    El Login de Ejemplo que nunca se mostró.
+    Login de Ejemplo.
   </h1>
   <div class="login">
-    <h2 class="login-header">Log in</h2>
+    <h2 class="login-header">Hola buenas tardes</h2>
     <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
-  
+
       <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
         <input type="email" placeholder="Email" formControlName="email">
       </p>
-  
+
       <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
-        <div *ngIf="formControls.email.errors.required">Email is required</div>
+        <div *ngIf="formControls.email.errors.required">Se requiere un email</div>
       </div>
-  
+
       <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
         <input type="password" placeholder="Password" formControlName="password">
       </p>
-  
+
       <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
-        <div *ngIf="formControls.password.errors.required">Password is required</div>
+        <div *ngIf="formControls.password.errors.required">Se requiere una contraseña</div>
       </div>
-  
+
       <p>
         <input type="submit" value="Log in">
       </p>

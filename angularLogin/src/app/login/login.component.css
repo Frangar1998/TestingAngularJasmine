@@ -23,7 +23,7 @@
 .login-header {
     background: rgb(88,24,125);
     padding: 20px;
-    font-size: 2.0em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -64,7 +64,7 @@
 }
 
 .login input[type="submit"]:focus {
-    background: #990050
+    background: #505050
 }
 
 .login input[type="submit"]:focus {
@@ -74,5 +74,5 @@
 .has-error input[type="email"],
 .has-error input[type="password"]{
     border-color: rgb(216,12,12);
-    color: rgb(230,14,14);
+    color: rgb(0,0,0);
 }

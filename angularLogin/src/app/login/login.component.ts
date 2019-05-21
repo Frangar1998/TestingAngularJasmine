@@ -25,10 +25,10 @@ export class LoginComponent implements OnInit {
 
   get formControls(){ return this.loginForm.controls; }
 
-  login(){
+  login() {
     console.log(this.loginForm.value);
     this.isSubmitted = true;
-    if(this.loginForm.invalid){
+    if (this.loginForm.invalid){
       return;
     }
     this.authService.login(this.loginForm.value);
